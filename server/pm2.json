@@ -1,0 +1,16 @@
+{
+  "apps": [{
+    "name": "D:fanhhsugerthemesnextsourcemyappD:fanhhsugerthemesnextsourcemyappserver",
+    "script": "www/production.js",
+    "cwd": "D:\fanhh\suger\themes\next\source\myapp\server",
+    "exec_mode": "cluster",
+    "instances": 0,
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    }
+  }]
+}

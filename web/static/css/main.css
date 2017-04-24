@@ -1,0 +1,16 @@
+.top-search {
+  height: 50px;
+  line-height: 34px;
+  padding: 8px 0;
+  background: #fff;
+}
+.top-search .mui-input-row {
+  clear: inherit;
+}
+.top-search .mui-input-row input {
+  font-size: 14px;
+  background: #ddd;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}

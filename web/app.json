@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {
+      "entry": "admin",
+      "title": "Admin Page",
+      "cdn": {}
+    },
+    {
+      "entry": "index",
+      "title": "Index Page",
+      "cdn": {}
+    }
+  ],
+  "basePath": "./src/pages/",
+  "cdn": {
+    "js": [
+      "//cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.js",
+      "//cdn.bootcss.com/vue/2.2.4/vue.min.js",
+      "/static/js/mui.min.js"
+    ],
+    "css": [
+      "/static/css/mui.min.css"
+    ]
+  },
+  "externals": {
+    "vue": "Vue",
+    "vuex": "Vuex"
+  }
+}
