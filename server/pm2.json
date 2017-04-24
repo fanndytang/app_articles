@@ -1,8 +1,8 @@
 {
   "apps": [{
-    "name": "D:fanhhsugerthemesnextsourcemyappD:fanhhsugerthemesnextsourcemyappserver",
+    "name": "D:fanhhapp_articlesD:fanhhapp_articles",
     "script": "www/production.js",
-    "cwd": "D:\fanhh\suger\themes\next\source\myapp\server",
+    "cwd": "D:\fanhh\app_articles\server",
     "exec_mode": "cluster",
     "instances": 0,
     "max_memory_restart": "1G",
