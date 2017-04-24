@@ -1,10 +1,11 @@
 <template>
     <div>
-        文章
-        <div v-for="item in list">
-            <h1>{{item.title}}</h1>
-            <div>{{item.content}}</div>
-        </div>
+        <ul>
+            <li v-for="item in list">
+                <h1>{{item.title}}</h1>
+                <div>{{item.content}}</div>
+            </li>
+        </ul>
     </div>
 </template>
 
