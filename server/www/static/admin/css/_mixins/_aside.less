@@ -1,0 +1,33 @@
+.aside {
+  width: @aside-width;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 101;
+
+  color: @aside-textcolor;
+  background: @aside-backcolor;
+
+  .logo {
+    height: @header-height;
+    border-bottom: 1px solid #fff;
+  }
+
+  .menu {
+    line-height: 40px;
+    .item:hover {
+      background: darken(@aside-backcolor, 10%);
+    }
+    .second {
+      overflow: hidden;
+      .transition(all ease-in-out .5s);
+    }
+    .tool {
+      padding-left: 20px;
+      &:hover {
+        background: darken(@aside-backcolor, 20%);
+      }
+    }
+  }
+}

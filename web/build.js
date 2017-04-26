@@ -1,7 +1,7 @@
-var App = require('./app.json');
-var path = require('path');
+let App = require('./app.json');
+let path = require('path');
 
-var merge = function(a, b) {
+let merge = function(a, b) {
   return {
     css: (a.css || []).concat(b.css || []),
     js: (a.js || []).concat(b.js || [])
@@ -9,7 +9,7 @@ var merge = function(a, b) {
 };
 
 exports.entries = function() {
-  var result = {};
+    let result = {};
   App.pages.forEach(p => {
     result[p.entry] = path.resolve(App.basePath, p.entry);
   });

@@ -3,23 +3,37 @@
     {
       "entry": "admin",
       "title": "Admin Page",
-      "cdn": {}
+      "cdn": {
+        "js": [
+          "/static/admin/js/jquery-2.0.3.min.js",
+          "/static/admin/plugin/bootstrap/js/bootstrap.min.js"
+        ],
+        "css": [
+          "/static/admin/plugin/bootstrap/css/bootstrap.min.css",
+          "/static/admin/css/main.css"
+        ]
+      }
     },
     {
       "entry": "index",
       "title": "Index Page",
-      "cdn": {}
+      "cdn": {
+        "js": [
+          "/static/assets/plugin/mui/js/mui.min.js"
+        ],
+        "css": [
+          "/static/assets/plugin/mui/css/mui.min.css"
+        ]
+      }
     }
   ],
   "basePath": "./src/pages/",
   "cdn": {
     "js": [
       "//cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.js",
-      "//cdn.bootcss.com/vue/2.2.4/vue.min.js",
-      "/static/js/mui.min.js"
+      "//cdn.bootcss.com/vue/2.2.4/vue.min.js"
     ],
     "css": [
-      "/static/css/mui.min.css"
     ]
   },
   "externals": {

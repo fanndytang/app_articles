@@ -1,20 +1,24 @@
 <template>
-    <div>
-        <form class="mui-input-group">
-            <div class="mui-input-row">
-                <label class="mui-col-sm-2">标题</label>
-                <input v-model="title" type="text" class="mui-col-sm-10" placeholder="请输入标题" />
+    <article class="article">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2 text-center">标题</label>
+                <div class="col-md-8">
+                    <input v-model="title" type="text" class="form-control" placeholder="请输入标题" />
+                </div>
             </div>
-            <div class="mui-input-row">
-                <label class="mui-col-sm-2">内容</label>
-                <textarea v-model="content" rows="3" class="mui-col-sm-10" placeholder="请输入内容" />
+            <div class="form-group">
+                <label class="col-md-2 text-center">内容</label>
+                <div class="col-md-8">
+                    <textarea v-model="content" rows="3" class="form-control" placeholder="请输入内容" />
+                </div>
             </div>
-            <div class="mui-button-row">
-                <button type="button" class="mui-btn mui-btn-primary" v-on:click="subForm">确认</button>
-                <button type="button" class="mui-btn mui-btn-danger">取消</button>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" v-on:click="subForm">确认</button>
+                <button type="button" class="btn btn-default">取消</button>
             </div>
         </form>
-    </div>
+    </article>
 </template>
 
 <script>
