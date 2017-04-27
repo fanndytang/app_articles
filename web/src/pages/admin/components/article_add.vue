@@ -1,5 +1,5 @@
 <template>
-    <article class="article">
+    <article class="article article-add">
         <form class="form-horizontal">
             <div class="form-group">
                 <label class="col-md-2 text-center">标题</label>

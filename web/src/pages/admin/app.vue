@@ -2,7 +2,7 @@
   <div>
     <heade></heade>
     <left></left>
-    <index></index>
+    <article_add></article_add>
     <foot></foot>
   </div>
 </template>
@@ -10,13 +10,13 @@
 <script>
     import heade from './components/header.vue'
     import left from './components/aside.vue'
-    import index from './components/index.vue'
+    import article_add from './components/article_add.vue'
     import foot from './components/footer.vue'
     export default {
         components: {
             heade: heade,
             left: left,
-            index: index,
+            article_add: article_add,
             foot: foot
         }
     };

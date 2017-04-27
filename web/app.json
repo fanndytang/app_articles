@@ -9,7 +9,7 @@
           "/static/admin/plugin/bootstrap/js/bootstrap.min.js"
         ],
         "css": [
-          "/static/admin/plugin/bootstrap/css/bootstrap.min.css",
+          "/static/admin/plugin/bootstrap/css/bootstrap.css",
           "/static/admin/css/main.css"
         ]
       }

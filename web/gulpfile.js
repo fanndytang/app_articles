@@ -29,6 +29,14 @@ gulp.task('less', function() {
         .pipe(gulp.dest(cssPath));
 });
 
+//  bootstrap
+gulp.task('bootstrap-less', function() {
+    return gulp.src('node_modules/bootstrap/less/bootstrap.less')
+        .pipe(less())
+        .pipe(minify())
+        .pipe(gulp.dest('../server/www/static/admin/plugin/bootstrap/css'));
+});
+
 //  清除所以编译生成的js（demo）
 gulp.task('clean-scripts', function() {
     return gulp.src(scriptsPath+'/*.min.js')

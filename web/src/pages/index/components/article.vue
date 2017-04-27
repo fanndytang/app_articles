@@ -1,12 +1,10 @@
 <template>
-    <div>
-        <ul>
-            <li v-for="item in list">
-                <h1>{{item.title}}</h1>
-                <div>{{item.content}}</div>
-            </li>
-        </ul>
-    </div>
+    <ul class="articles">
+        <li v-for="item in list">
+            <h1>{{item.title}}</h1>
+            <div>{{item.content}}</div>
+        </li>
+    </ul>
 </template>
 
 <script>
