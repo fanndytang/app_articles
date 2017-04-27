@@ -31,7 +31,7 @@ gulp.task('less', function() {
 
 //  bootstrap
 gulp.task('bootstrap-less', function() {
-    return gulp.src('node_modules/bootstrap/less/bootstrap.less')
+    return gulp.src('cache/bootstrap/less/bootstrap.less')
         .pipe(less())
         .pipe(minify())
         .pipe(gulp.dest('../server/www/static/admin/plugin/bootstrap/css'));
