@@ -8,10 +8,10 @@
 </template>
 
 <script>
-    import heade from './components/header.vue'
-    import left from './components/aside.vue'
-    import article_add from './components/article_add.vue'
-    import foot from './components/footer.vue'
+    import heade from '../components/header.vue';
+    import left from '../components/aside.vue';
+    import article_add from './components/article_add.vue';
+    import foot from '../components/footer.vue';
     export default {
         components: {
             heade: heade,

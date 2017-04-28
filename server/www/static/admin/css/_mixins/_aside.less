@@ -16,16 +16,15 @@
 
   .menu {
     line-height: 40px;
-    .item:hover {
-      background: darken(@aside-backcolor, 10%);
-    }
-    .second {
-      overflow: hidden;
-      .transition(all ease-in-out .5s);
+    .item {
+      padding: 0 10px;
+      &.active, &:hover {
+        background: darken(@aside-backcolor, 10%);
+      }
     }
     .tool {
-      padding-left: 20px;
-      &:hover {
+      padding: 0 10px;
+      &.active, &:hover {
         background: darken(@aside-backcolor, 20%);
       }
     }

@@ -1,7 +1,8 @@
 {
   "pages": [
     {
-      "entry": "admin",
+      "folder": "admin",
+      "entry": "index",
       "title": "Admin Page",
       "cdn": {
         "js": [
@@ -15,14 +16,32 @@
       }
     },
     {
+      "folder": "home/article",
       "entry": "index",
-      "title": "Index Page",
+      "title": "文章管理",
       "cdn": {
         "js": [
-          "/static/assets/plugin/mui/js/mui.min.js"
+          "//g.alicdn.com/sj/lib/zepto/zepto.min.js",
+          "//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js"
         ],
         "css": [
-          "/static/assets/plugin/mui/css/mui.min.css"
+          "//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css",
+          "/static/assets/css/main.css"
+        ]
+      }
+    },
+    {
+      "folder": "home/article",
+      "entry": "detail",
+      "title": "文章详情",
+      "cdn": {
+        "js": [
+          "//g.alicdn.com/sj/lib/zepto/zepto.min.js",
+          "//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js"
+        ],
+        "css": [
+          "//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css",
+          "/static/assets/css/main.css"
         ]
       }
     }

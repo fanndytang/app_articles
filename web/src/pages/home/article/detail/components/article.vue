@@ -1,23 +1,22 @@
 <template>
-    <ul class="articles">
-        <li v-for="item in list">
-            <h1>{{item.title}}</h1>
-            <div>{{item.content}}</div>
-        </li>
-    </ul>
+    <div>
+        <h1>{{title}}</h1>
+        <div>{{content}}</div>
+    </div>
 </template>
 
 <script>
     export default {
         data() {
             return {
-                list: []
+                title: '标题',
+                content: '详情'
             }
         },
         mounted: function() {
             let self = this;
             self.$http.get('/admin/index/show_article').then(data=>{
-                self.list = data.data.data;
+              //  self.list = data.data.data;
             });
         }
     }
