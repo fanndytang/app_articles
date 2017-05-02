@@ -10,7 +10,7 @@
             <div class="form-group">
                 <label class="col-md-2 text-center">内容</label>
                 <div class="col-md-8">
-                    <textarea v-model="content" rows="3" class="form-control" placeholder="请输入内容" />
+                    <markdown></markdown>
                 </div>
             </div>
             <div class="text-center">
@@ -22,21 +22,26 @@
 </template>
 
 <script>
+    import markdown from './markdown.vue';
     export default {
         data() {
             return {
                 title: '',
-                content: ''
+                content: markdown.data().input
             }
+        },
+        components: {
+            markdown
         },
         methods: {
             subForm: function() {
-                console.log(this.title)
+                console.log(markdown)
+                console.log(markdown.getVal())
                 let data = {
                     title: this.title,
                     content: this.content
                 };
-                this.$http.post('/admin/index/add_article', data).then(data=>{
+                this.$http.post('/admin/article/add_article', data).then(data=>{
 
                 });
             }

@@ -1,21 +1,6 @@
 {
   "pages": [
     {
-      "folder": "admin",
-      "entry": "index",
-      "title": "Admin Page",
-      "cdn": {
-        "js": [
-          "/static/admin/js/jquery-2.0.3.min.js",
-          "/static/admin/plugin/bootstrap/js/bootstrap.min.js"
-        ],
-        "css": [
-          "/static/admin/plugin/bootstrap/css/bootstrap.css",
-          "/static/admin/css/main.css"
-        ]
-      }
-    },
-    {
       "folder": "home/article",
       "entry": "index",
       "title": "文章管理",
@@ -42,6 +27,21 @@
         "css": [
           "//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css",
           "/static/assets/css/main.css"
+        ]
+      }
+    },
+    {
+      "folder": "admin/article",
+      "entry": "adindex",
+      "title": "Admin Page",
+      "cdn": {
+        "js": [
+          "/static/admin/js/jquery-2.0.3.min.js",
+          "/static/admin/plugin/bootstrap/js/bootstrap.min.js"
+        ],
+        "css": [
+          "/static/admin/plugin/bootstrap/css/bootstrap.css",
+          "/static/admin/css/main.css"
         ]
       }
     }

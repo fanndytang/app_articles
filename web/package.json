@@ -34,6 +34,8 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.1.2",
+    "lodash": "^4.17.4",
+    "marked": "^0.3.6",
     "merge-stream": "^1.0.1",
     "mui": "^1.0.0",
     "path": "^0.12.7",

@@ -65,7 +65,7 @@
         },
         mounted: function() {
             let self = this;
-            self.$http.get('/admin/index/show_article').then(data=>{
+            self.$http.get('/home/article/show_article').then(data=>{
                 self.list = data.data.data;
             });
            $.init()
